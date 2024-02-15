@@ -1,15 +1,22 @@
 import React from 'react'
 import Header from '../Header/Header'
 import './Hero.css'
-export const Hero = () => {
+const Hero = () => {
   return (
     <div className="hero">
       <div className="left-h">
         <Header/>
-
-        <div className="the-best-ad"></div>
+{/* the best ad */}
+        <div className="the-best-ad">
         <div></div>
         <span>the best fitness club in the town</span>
+       </div>
+
+
+       {/* Hero Heading */}
+       <div className="hero-text">
+
+        </div>
       </div>
       <div className="right-h">right side</div>
     </div>
