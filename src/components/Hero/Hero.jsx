@@ -1,10 +1,10 @@
-import React from 'react'
-import Header from '../Header/Header'
-import './Hero.css'
-import hero_image from "../../assets/hero_image.png"
-import hero_image_back from "../../assets/hero_image_back.png"
-import Heart from "../../assets/heart.png"
-import Calories from "../../assets/calories.png"
+import React from "react";
+import Header from "../Header/Header";
+import "./Hero.css";
+import hero_image from "../../assets/hero_image.png";
+import hero_image_back from "../../assets/hero_image_back.png";
+import Heart from "../../assets/heart.png";
+import Calories from "../../assets/calories.png";
 const Hero = () => {
     return (
       <div className="hero">
@@ -63,9 +63,13 @@ const Hero = () => {
             <span>Heart Rate</span>
             <span>116 bpm</span>
           </div>
+
+          {/* hero images */}
+          <img src={'hero_image'} alt="" className="hero-image" />
+          <img src={'hero_image_back'} alt="" className="hero-image-back" />
           </div>
       </div>
     );
   };
   
-  export default Hero
+  export default Hero;
