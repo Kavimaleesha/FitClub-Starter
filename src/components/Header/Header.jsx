@@ -26,18 +26,57 @@ const Header = () => {
       </div>
   ) : (
           <ul className='header-menu'>
-            <li onClick ={()=>setMenuOpened(false)}>
-              <link>Home</link>
-              
+            <li>
+              <Link
+              onClick ={()=>setMenuOpened(false)}
+              activeClass="active"
+              to='home'
+              spy={true}
+              smooth={true}
+              >
+                Home
+                </Link>
               </li>
-            <li onClick ={()=>setMenuOpened(false)}><link>Programs</link></li>
-            <li onClick ={()=>setMenuOpened(false)}><link>Why us</link></li>
-            <li onClick ={()=>setMenuOpened(false)}><link>Plans</link></li>
-            <li onClick ={()=>setMenuOpened(false)}> <link
-            to="testimonials"
-            span={true}
-            smooth={true}
-            >Testimonials</link></li>
+              <li>
+                <Link
+                 onClick ={()=>setMenuOpened(false)}
+                 to='programs'
+                 spy={true}
+                 smooth={true}
+                 >
+                 Programs
+                 </Link>
+                 </li>
+                 <li>
+                <Link
+                 onClick ={()=>setMenuOpened(false)}
+                 to='reasons'
+                 spy={true}
+                 smooth={true}
+                 >
+                 Why us
+                 </Link>
+                 </li>
+                 <li>
+                <Link
+                 onClick ={()=>setMenuOpened(false)}
+                 to='plans'
+                 spy={true}
+                 smooth={true}
+                 >
+                 Plans
+                 </Link>
+                 </li>
+                 <li>
+                <Link
+                 onClick ={()=>setMenuOpened(false)}
+                 to='testimonials'
+                 spy={true}
+                 smooth={true}
+                 >
+                 Testimonials
+                 </Link>
+                 </li>
           </ul>
           )}
       </div>
